@@ -1,0 +1,145 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #889da0;
+    color: #3a566a;
+    margin: 0;
+    animation: aparecer 3s;
+    text-align: center;
+}
+.anav {
+    text-decoration: none;
+    color: #3a566a;
+}
+
+li {
+    display: inline;
+    margin: 200px;
+}
+a {
+    text-decoration: none;
+    color: #3a566a;
+}
+
+
+a:hover {
+    background-color: rgb(46, 96, 166);
+    color: rgb(164, 186, 227);
+  }
+
+.navegacion1 li {
+    background-color: rgb(180, 187, 192);
+    margin: 100px;
+}
+nav {
+    background-color: rgb(180, 187, 192);
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contenedor {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: inline;
+;
+
+}
+img {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 50px;
+
+}
+
+img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.Batalla {
+
+    width: 300px;
+    border-radius: 10px;
+    margin:auto;
+    display: block;
+}
+.Batalla:hover {
+    transform: none;
+    cursor: pointer;
+}
+.gif {
+    width: 200px;
+    border-radius: 10px;
+}
+.gif:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    background-color: rgb(180, 187, 192);
+    margin: 0;
+    font-family: 'Bangers';
+    font-weight: 200;
+    animation: aparecer 4s;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 250px;
+    animation: aparecer 4s;
+}
+
+.opcion {
+    height: 250px;
+    width: 250px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.5s;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.respuesta-correcta {
+    border-color: green !important;
+}
+
+.respuesta-incorrecta {
+    border-color: red !important;
+}
+
+.resultado {
+    margin-top: 20px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #3a566a;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

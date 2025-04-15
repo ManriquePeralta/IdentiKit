@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta FINAL</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav> 
+        <ul class="navegacion1">
+            <li class="anav"> <a href="/Index.html"> HOME </a></li>
+            <li> <a href="tablita.html" class="anav"> Tabla </a></li>
+            <li> <a href="/Index 3.html" class="anav"> TOP JUGADORES </a></li>
+            <li> <a href="Index.html" class="anav"> TRIVIA </a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <h1>¿Quién de estos cuenta con MÁS causas (abiertas y cerradas) en Argentina?</h1>
+        <div class="grid">
+            <img src="Imagenes/Cristina.jpg" alt="Opción 1" class="opcion incorrecta" onclick="seleccionarRespuesta(this, false)">
+            <img src="Imagenes/Nestor.jpg" alt="Opción 2" class="opcion incorrecta" onclick="seleccionarRespuesta(this, false)">
+            <img src="Imagenes/Macri.jpg" alt="Opción 3" class="opcion correcta" onclick="seleccionarRespuesta(this, true)">
+            <img src="Imagenes/Fernandez.jpeg" alt="Opción 4" class="opcion incorrecta" onclick="seleccionarRespuesta(this, false)">
+        </div>
+        <div id="resultado" class="resultado" style="display: none;">
+            <a id="botonRespuesta" href="#" class="boton"></a>
+        </div>
+    </div>
+    <script>
+        function seleccionarRespuesta(elemento, correcta) {
+            let resultado = document.getElementById("resultado");
+            let boton = document.getElementById("botonRespuesta");
+            let opciones = document.querySelectorAll(".opcion");
+            
+
+            opciones.forEach(opcion => {
+                opcion.onclick = null;
+                if (opcion.classList.contains("correcta")) {
+                    opcion.classList.add("respuesta-correcta");
+                } else {
+                    opcion.classList.add("respuesta-incorrecta");
+                }
+            });
+            
+            if (correcta) {
+                boton.innerText = "Continuar";
+                boton.href = "final.html";
+            } else {
+                boton.innerText = "Volver a empezar";
+                boton.href = "Juego.html";
+            }
+            resultado.style.display = "block";
+        }
+    </script>
+</body>
+</html>
