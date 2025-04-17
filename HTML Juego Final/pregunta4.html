@@ -18,10 +18,38 @@
     <div class="contenedor">
         <h1>¿Quién solo nombró como ministro de salud a Ginez Gonzalez García?</h1>
         <div class="grid">
-            <img src="Imagenes/Fernandez.jpeg" alt="Opción 1" class="opcion incorrecta" onclick="seleccionarRespuesta(this, false)">
-            <img src="Imagenes/Nestor.jpg" alt="Opción 2" class="opcion incorrecta" onclick="seleccionarRespuesta(this, false)">
-            <img src="Imagenes/Cristina.jpg" alt="Opción 3" class="opcion incorrecta" onclick="seleccionarRespuesta(this, false)">
-            <img src="Imagenes/Duhalde.jpg" alt="Opción 4" class="opcion correcta" onclick="seleccionarRespuesta(this, true)">
+            <div class="opcion incorrecta" onclick="seleccionarRespuesta(this, false)">
+                <div class="opcion-inner">
+                    <div class="opcion-front">
+                        <img src="Imagenes/Fernandez.jpeg" alt="Opción 1">
+                    </div>
+                    <div class="opcion-back">Fernández</div>
+                </div>
+            </div>
+            <div class="opcion incorrecta" onclick="seleccionarRespuesta(this, false)">
+                <div class="opcion-inner">
+                    <div class="opcion-front">
+                        <img src="Imagenes/Nestor.jpg" alt="Opción 2">
+                    </div>
+                    <div class="opcion-back">Néstor</div>
+                </div>
+            </div>
+            <div class="opcion incorrecta" onclick="seleccionarRespuesta(this, false)">
+                <div class="opcion-inner">
+                    <div class="opcion-front">
+                        <img src="Imagenes/Cristina.jpg" alt="Opción 3">
+                    </div>
+                    <div class="opcion-back">Cristina</div>
+                </div>
+            </div>
+            <div class="opcion correcta" onclick="seleccionarRespuesta(this, true)">
+                <div class="opcion-inner">
+                    <div class="opcion-front">
+                        <img src="Imagenes/Duhalde.jpg" alt="Opción 4">
+                    </div>
+                    <div class="opcion-back">Duhalde</div>
+                </div>
+            </div>
         </div>
         <div id="resultado" class="resultado" style="display: none;">
             <a id="botonRespuesta" href="#" class="boton"></a>
@@ -29,10 +57,7 @@
     </div>
     <script>
         function seleccionarRespuesta(elemento, correcta) {
-            let resultado = document.getElementById("resultado");
-            let boton = document.getElementById("botonRespuesta");
             let opciones = document.querySelectorAll(".opcion");
-            
 
             opciones.forEach(opcion => {
                 opcion.onclick = null;
@@ -42,15 +67,12 @@
                     opcion.classList.add("respuesta-incorrecta");
                 }
             });
-            
+
             if (correcta) {
-                boton.innerText = "Continuar";
-                boton.href = "pregunta5.html";
+                window.location.href = "pregunta5.html";
             } else {
-                boton.innerText = "Volver a empezar";
-                boton.href = "Juego.html";
+                window.location.href = "pregunta3.html";
             }
-            resultado.style.display = "block";
         }
     </script>
 
