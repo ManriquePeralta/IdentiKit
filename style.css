@@ -32,7 +32,7 @@ img {
 
 .fotoinicio {
     width: 300px;
-    margin-left: 600px;
+    margin:auto;
     animation: volador 3s 3;
     animation-delay: 3s;
     border: 10px solid #6a9da3;
