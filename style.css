@@ -9,7 +9,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125rem;
     display: block;
     background-color: rgb(180, 187, 192);
     margin: 0;
@@ -22,7 +22,7 @@ h2 {
     background-color: rgb(180, 187, 192);
     font-family: 'Bangers';
     font-weight: 200;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 img {
@@ -31,89 +31,91 @@ img {
 }
 
 .fotoinicio {
-    width: 300px;
-    margin:auto;
+    width: 18.75rem;
+    margin-left: auto;
+    margin-right: auto;
     animation: volador 3s 3;
     animation-delay: 3s;
-    border: 10px solid #6a9da3;
-
+    border: 0.625rem solid #6a9da3;
 }
-
 
 p {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 19px;
+    font-size: 1.1875rem;
 }
 
 blockquote {
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-style: pt-serif;
     text-align: center;
 }
 
 li {
     display: inline;
-    margin: 200px;
+    margin: 12.5rem;
 }
 
 .navegacion1 li {
     background-color: rgb(180, 187, 192);
-    margin: 100px;
+    margin: 6.25rem;
 }
+
 nav {
     background-color: rgb(180, 187, 192);
-    height: 20px;
+    height: 1.25rem;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     text-align: center;
 }
   
-  .barralateral ul {
+.barralateral ul {
     padding: 0;
     margin: 0;
-  }
+}
   
-  .barralateral ul li {
-    margin-bottom: 10px; 
-  }
-  iframe {
-    width:550px; 
-    height: 400px;
+.barralateral ul li {
+    margin-bottom: 0.625rem; 
+}
+  
+iframe {
+    width: 34.375rem; 
+    height: 25rem;
     border: none;
     background-color: rgb(180, 187, 192);
-  }
-  .barralateral ul li a {
+}
+
+.barralateral ul li a {
     text-decoration: none; 
     color: #333;
     display: block;
-    padding: 10px; 
-    border-radius: 5px; 
-  }
+    padding: 0.625rem; 
+    border-radius: 0.3125rem; 
+}
   
-  .barralateral ul li a:hover {
+.barralateral ul li a:hover {
     background-color: #ddd; 
-  }
+}
 
-  .jugadores {
+.jugadores {
     display: flex;
-  }
+}
   
-  .sidebar {
-    width: 100px;
+.sidebar {
+    width: 6.25rem;
     height: 100%;
-
-    padding: 1px;
-  }
+    padding: 0.0625rem;
+}
   
-  .contenido {
+.contenido {
     flex: 1;
-    padding: 1px;
+    padding: 0.0625rem;
     background-color: rgb(180, 187, 192);
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
 .item {
     background-color: rgb(180, 210, 192);
     text-transform: uppercase;
@@ -127,7 +129,7 @@ a {
 a:hover {
     background-color: rgb(46, 96, 166);
     color: rgb(164, 186, 227);
-  }
+}
 
 .rojo {
     animation: arcoiris 3s infinite;
@@ -142,191 +144,327 @@ a:hover {
 }
 
 .imagen-en-linea {
-    width: 100px;
+    width: 6.25rem;
     display: inline;
 }
 
 hr {
-    size: 10px;
+    size: 0.625rem;
     color: #888da0;
 }
 
 .titulo-comparacion {
     text-align: center;
     font-family: 'Barriecito';
-    font-size: 100px;
+    font-size: 6.25rem;
     animation: flotaflota 3s infinite;
 }
 
 .tabla1 {
     width:50%;
-     margin: auto;
-    border: 1px black solid;
-
-
+    margin: auto;
+    border: 0.0625rem black solid;
 }
-.tabla1 td{ 
-  height: 150px; background-color: #889da0;
+
+.tabla1 td { 
+    height: 9.375rem; 
+    background-color: #889da0;
 }
 
 .tabla1 img {
-
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
-
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
 }
 
 .fotostb1 {
-
-  height: 100px; width: 200px; display: inline;
+    height: 6.25rem; 
+    width: 12.5rem; 
+    display: inline;
 }
-.fotostb2 {
 
-  height: 100px; width: 200px; display: inline;
+.fotostb2 {
+    height: 6.25rem; 
+    width: 12.5rem; 
+    display: inline;
 }
 
 @keyframes flotaflota {
-  0% {
-      transform: translateY(0);
-  }
-  30% {
-      transform: translateY(10px);
-  }
-  60% {
-      transform: translateY(-10px);
-  }
-  100% {
-      transform: translateY(0);
-  }
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(0.625rem);
+    }
+    60% {
+        transform: translateY(-0.625rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes volador {
-  0% {
-      transform: translateX(0);
-  }
-  10% {
-      transform: translateX(-10px);
-  }
-  20% {
-      transform: translateX(30px);
-      transform: rotateY(180deg);
-  }
-  30% {
-      transform: translateY(-50px);
-      transform: translateX(50px);
-  }
-  50% {
-      transform: translateX(20px);
-      transform: rotateY(180deg);
-  }
-  100% {
-      transform: translateX(0);
-  }
-
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-0.625rem);
+    }
+    20% {
+        transform: translateX(1.875rem);
+        transform: rotateY(180deg);
+    }
+    30% {
+        transform: translateY(-3.125rem);
+        transform: translateX(3.125rem);
+    }
+    50% {
+        transform: translateX(1.25rem);
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @keyframes arcoiris {
-  0% {
-      background-color: rgb(71, 169, 234);
-  }
-  5% {
-      background-color: rgb(81, 169, 234);
-  }
-  10% {
-      background-color: rgb(91, 169, 234);
-  }
-  15% {
-      background-color: rgb(101, 169, 234);
-  }
-  20% {
-      background-color: rgb(111, 169, 234);
-  }
-  25% {
-      background-color: rgb(121, 169, 234);
-  }
-  30% {
-      background-color: rgb(131, 169, 234);
-  }
-  35% {
-      background-color: rgb(141, 169, 234);
-  }   
-  40% {
-      background-color: rgb(151, 159, 224);
-  }
-  45% {
-      background-color: rgb(141, 139, 224);
-  }
-  50% {
-      background-color: rgb(131, 129, 224);
-  }
-  55% {
-      background-color: rgb(121, 119, 224);
-  }
-  60% {
-      background-color: rgb(111, 109, 224);
-  }
-  65% {
-      background-color: rgb(101, 99, 224);
-  }
-  70% {
-      background-color: rgb(91, 89, 224);
-  }
-  75% {
-      background-color: rgb(71, 99, 224);
-  }
-  80% {
-      background-color: rgb(71, 109, 224);
-  }
-  85% {
-      background-color: rgb(71, 119, 224);
-  }
-  90% {
-      background-color: rgb(71, 129, 224);
-  }
-  92% {
-      background-color: rgb(71, 139, 224);
-  }
-  94% {
-      background-color: rgb(71, 149, 224);
-  }
-  96% {
-      background-color: rgb(71, 159, 224);
-  }
-  100% {
-      background-color: rgb(71, 169, 234);
-  }
+    0% {
+        background-color: rgb(71, 169, 234);
+    }
+    5% {
+        background-color: rgb(81, 169, 234);
+    }
+    10% {
+        background-color: rgb(91, 169, 234);
+    }
+    15% {
+        background-color: rgb(101, 169, 234);
+    }
+    20% {
+        background-color: rgb(111, 169, 234);
+    }
+    25% {
+        background-color: rgb(121, 169, 234);
+    }
+    30% {
+        background-color: rgb(131, 169, 234);
+    }
+    35% {
+        background-color: rgb(141, 169, 234);
+    }   
+    40% {
+        background-color: rgb(151, 159, 224);
+    }
+    45% {
+        background-color: rgb(141, 139, 224);
+    }
+    50% {
+        background-color: rgb(131, 129, 224);
+    }
+    55% {
+        background-color: rgb(121, 119, 224);
+    }
+    60% {
+        background-color: rgb(111, 109, 224);
+    }
+    65% {
+        background-color: rgb(101, 99, 224);
+    }
+    70% {
+        background-color: rgb(91, 89, 224);
+    }
+    75% {
+        background-color: rgb(71, 99, 224);
+    }
+    80% {
+        background-color: rgb(71, 109, 224);
+    }
+    85% {
+        background-color: rgb(71, 119, 224);
+    }
+    90% {
+        background-color: rgb(71, 129, 224);
+    }
+    92% {
+        background-color: rgb(71, 139, 224);
+    }
+    94% {
+        background-color: rgb(71, 149, 224);
+    }
+    96% {
+        background-color: rgb(71, 159, 224);
+    }
+    100% {
+        background-color: rgb(71, 169, 234);
+    }
 }
+
 @keyframes aparecer {
-  0% {
-      opacity: 0;
-  }
-  50% {
-      opacity: 0.5;
-  }
-  100% {
-     opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes lupi {
-  0% {
-      background-color: red;
-  }
-  20% {
-      background-color: orange;
-  }
-  40% {
-      background-color: yellow;
-  }
-  60% {
-      background-color: green;
-  }
-  80% {
-      background-color: blue;
-  }
-  100% {
-      background-color: violet;
-  }
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: green;
+    }
+    80% {
+        background-color: blue;
+    }
+    100% {
+        background-color: violet;
+    }
 }
- 
+#tablita {
+border-collapse: collapse; width: 100px; height: 100px; margin-left: 90%;
+}
+#tablita2 {
+border-collapse: collapse; width: 100px; height: 100px; margin-left: 3%;
+}
+#tablitaella {height: 100%; width: 13rem; display: inline;}
+#tablayo{height: 100%; width: 10rem; display: inline;}
+/* Celulares (pantallas hasta 600px) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 35vw;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .fotoinicio {
+        width: 12rem;
+        border-width: 0.5rem;
+        
+    }
+
+    p, blockquote {
+        font-size: 1rem;
+    }
+
+    li, .navegacion1 li, .item {
+        margin: 1rem;
+        display: block;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen-en-linea {
+        width: 4rem;
+    }
+
+    .titulo-comparacion {
+        font-size: 3.5rem;
+        margin-top: 40vw;
+    }
+    #lineamover {
+        margin-top: 35vw;
+    }
+
+    .tabla1 {
+        width: 100%;
+    }
+
+    .fotostb1, .fotostb2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .jugadores {
+        flex-direction: column;
+        margin-top: 30vw;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .contenido {
+        flex-direction: column;
+        padding: 0.5rem;
+        margin-top: 10vw;
+    }
+}
+
+/* Tablets (pantallas desde 601px hasta 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .fotoinicio {
+        width: 15rem;
+        border-width: 0.5625rem;
+    }
+
+    p, blockquote {
+        font-size: 1.1rem;
+    }
+
+    li, .navegacion1 li {
+        margin: 3rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen-en-linea {
+        width: 5rem;
+    }
+
+    .titulo-comparacion {
+        font-size: 5rem;
+    }
+
+    .tabla1 {
+        width: 80%;
+    }
+
+    .fotostb1, .fotostb2 {
+        width: 10rem;
+        height: 5rem;
+    }
+
+    .jugadores {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 8rem;
+        padding: 0.5rem;
+    }
+
+    .contenido {
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+}
